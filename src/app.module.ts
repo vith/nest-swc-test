@@ -10,6 +10,7 @@ import { OtherModule } from './other/other.module';
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'db.sqlite',
+      entities: ['**/*.entity.js'],
     }),
     UserModule,
     OtherModule,
